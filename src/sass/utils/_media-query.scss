@@ -69,3 +69,19 @@ $break: 768px;
     @content;
   }
 }
+
+@mixin media($media) {
+  @if $media == "mobile" {
+    @media (max-width: ($break - 1)) {
+      @content;
+    }
+  }
+  @if $media == "desktop" {
+    @media (min-width: $break) {
+      @content;
+    }
+  }
+  @if $media != "mobile" and $media != "desktop" {
+    @error '미디어 유형이 유효하지 않습니다.';
+  }
+}
