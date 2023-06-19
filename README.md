@@ -20,6 +20,14 @@ git clone https://github.com/<본인 Github ID>/webcafe-Sass.git
 git remote add ssam https://github.com/seulbinim/webcafe-Sass.git
 ```
 
+**패키지 설치 하기**
+
+```sh
+npm install
+또는
+npm i
+```
+
 **리모트 저장소 업데이트 하기**
 
 ```sh
